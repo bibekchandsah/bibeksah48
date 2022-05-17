@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <=====nav bar=====> -->
+    <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://bibek10550.github.io/bibek/">
+                <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30"
+                    height="24" class="d-inline-block align-text-top">
+                Bibek
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="youtube.html">Youtube videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="websites.html">Websites</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Admin</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <=====buttons=====> -->
+    <div class="d-grid gap-2 d-md-flex d-md-block my-3 m-2 justify-content-md-center">
+        <button class="filter btn btn-primary" data-filter="Andrioid" type="button">Andriod📱</button>
+        <button class="filter btn btn-primary" data-filter="Connectivity" type="button">Connectivity🤝</button>
+        <button class="filter btn btn-primary" data-filter="Customize" type="button">Customize🛃</button>
+        <button class="filter btn btn-primary" data-filter="Editing" type="button">Editing🪄</button>
+        <button class="filter btn btn-primary" data-filter="PCLaptop" type="button">PC/Laptop💻</button>
+        <button class="filter btn btn-primary" data-filter="Excel" type="button">Excel📜</button>
+        <button class="filter btn btn-primary" data-filter="Programming" type="button">Programming👨‍💻</button>
+        <button class="filter btn btn-primary acctive" data-filter="Showall" type="button">Show all👓</button>
+        <button class="filter btn btn-primary" data-filter="Window" type="button">Window🪟</button>
+    </div>
+
+    <!-- <=====youtube video=====> -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col itemBox Customize">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/fm8MGPKgUPk" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">How to convert your computer into JARVIS</h5>
+                    <p class="card-text">J.A.R.V.I.S. is the name of Stark's AI system that assists him in
+                        superhero-ing. It's also an acronym that stands for "Just a Rather Very Intelligent System.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Customize">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/r6GuJmrJy6E" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Unlock PC/Laptop Using Android phone Fingerprint Scanner</h5>
+                    <p class="card-text">Unlock PC/Laptop Using Your Android phone Fingerprint Scanner . It is an
+                        AWESOME Trick which is working great and NO ROOT required .</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Programming">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/WfYxrLaqlN8" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Cracking WiFi WPA2 Handshake</h5>
+                    <p class="card-text">Full process using Kali Linux to crack WiFi passwords. Discuss network
+                        adapters, airmon-ng, airodump-ng, aircrack-ng and more in this video.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Programming">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/ZdV6wKo5o1A" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Awesome (Harmless) Computer Virus</h5>
+                    <p class="card-text">An awesome computer Virus prank, this is harmless and does not affect anything,
+                        this is the secure way to create prank virus.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Window">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/j3Eo7uI2Ef8" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Monitor Other People screen</h5>
+                    <p class="card-text"> Look other person computer screen remotely.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Customize">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/sRqDTGshiqw" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Set Auto Start Programs In Windows</h5>
+                    <p class="card-text">Set Auto Start Programs In Windows. We will look at multiple ways on how to set
+                        auto start programs in Windows.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Customize">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/x5DIWmCibUM" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">VLC MOUSE PLAY PUASE PLUGIN</h5>
+                    <p class="card-text">To play/pause with mouse in VLC.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Editing">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/52aeWt25QBY" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Repair Corrupt Memory / Pen-Drive</h5>
+                    <p class="card-text">We will learn how to repair pen drive or memory card at home.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox PCLaptop">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/_gPmrmaHtuI" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Install Windows 11 in Any Computer</h5>
+                    <p class="card-text">We are going to install windows 11 on the computer by using iso file for that
+                        you must require an internet properly because file size this time is large and you also required
+                        an sd card or pen drive for Making it bootable device.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Programming">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/mN6cTcA5mDI" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Clone any voice</h5>
+                    <p class="card-text">how to clone any voice using deep learning? How to use real-time voice cloning
+                        in windows.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Programming">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/MqBUVCQBVlM" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Check your Windows is Original or Duplicate</h5>
+                    <p class="card-text">We will learn that how to identify windows 10 is genuine or not and also i will
+                        teach how to get digital license key details.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Programming">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/NnoFBSZlgtI" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Check License Type and Activation Status of MS Office</h5>
+                    <p class="card-text">If you’d like to check the activation type and license status of your Microsoft
+                        Office installation, on your Windows computer, then you can do so using a command prompt.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Programming">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/Jc3zBaBwWok" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">What other People are Browsing on your Wi-Fi!</h5>
+                    <p class="card-text">See what websites or services other people are using on your Wi-Fi network with
+                        this simple trick.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Programming">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/MKV-DmhOs4o" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Use Aircrack ng On Windows</h5>
+                    <p class="card-text">How To Use Aircrack ng On Windows.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Programming">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/JSMw4AHjRAE" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">If Your Wireless Network Adapter Supports Monitor Mode </h5>
+                    <p class="card-text">Test if Your Wireless Network Adapter Supports Monitor Mode & Packet Injection.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Window">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/R0YvMwwHFL4" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Lock or Protect Your PEN DRIVE/ FOLDER</h5>
+                    <p class="card-text"> Lock or Protect Your PEN DRIVE/ FOLDER and DISK DRIVE.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Customize">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/zQYyy13gtLY" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Share One Mouse & Keyboard Across PCs </h5>
+                    <p class="card-text">How you can control up to 4 computers from a single mouse and keyboard with
+                        this FREE tool made by Microsoft.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Connectivity">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/UDrLTQzFWrc" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Transfer all files between computer and Mobile Wirelessly</h5>
+                    <p class="card-text">How to share all the file between mobile and computer without using a USB
+                        Cable, all about wirelessly transfer files between computer and mobile for free.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Connectivity">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/W_XG6dbDTEE" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title"> Wireless Data Transfer between Two PCs</h5>
+                    <p class="card-text">Wireless Data Transfer between Two PCs | How to transfer files wirelessly</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Connectivity">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/w2iHtt0GY6U" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Wireless Data Transfer Android to PC</h5>
+                    <p class="card-text">If you want to send data android to pc or pc to android this video tutorial for
+                        you see immediately transfer data on your computer to mobile and mobile to computer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox PCLaptop">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/02mgrA51974" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Upgrade to Windows 11 on old PC </h5>
+                    <p class="card-text">How to upgrade to Windows 11 for unsupported hardware</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Connectivity">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/192gA8F8ULM" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Connect Two Computers and share files using Lan Cable </h5>
+                    <p class="card-text">How to connect two computer together with an ethernet cable, how we can share
+                        files between two computers using a lan or a ethernet cable</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Excel">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/HyLbqmbZgNo" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Data Entry & Office Work TrainingData Entry & Office Work Training</h5>
+                    <p class="card-text">Data Entry & Office Work Training For Job In Excel</p>
+                </div>
+            </div>
+        </div>
+        <div class="col itemBox Editing">
+            <div class="card h-100">
+                <iframe height="315" src="https://www.youtube.com/embed/8leYrtjx2VQ" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Change Colour in to Dark Skin to Light Skin</h5>
+                    <p class="card-text">How to Change Colour in to Dark Skin to Light Skin | Step By Step | Photoshop Tutoria</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.filter').click(function () {
+                const value = $(this).attr('data-filter');
+                if (value == 'Showall') {
+                    $('.itemBox').show('1000');
+                }
+                else {
+                    $('.itemBox').not('.' + value).hide('1000');
+                    $('.itemBox').filter('.' + value).show('1000');
+                }
+            })
+            // add active class on selected item
+            $('.filter').click(function(){
+            $(this).addClass('acctive').siblings().removeClass('acctive');
+        })
+        })
+    </script>
+</body>
+
+</html>

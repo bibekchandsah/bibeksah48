@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <=====nav bar=====> -->
+    <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://bibek10550.github.io/bibek/">
+                <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30"
+                    height="24" class="d-inline-block align-text-top">
+                Bibek
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="youtube.html">Youtube videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="websites.html">Websites</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Admin</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Google website
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body list-group list-group-numbered">
+                    <a href="https://www.google.com/" target="_blank"
+                        class="list-group-item list-group-item-secondary list-group-item-action">Google home page
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="//www.google.com/favicon.ico" class="" alt="Google" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/?tab=8m#inbox" target="_blank"
+                        class="list-group-item list-group-item-info list-group-item-action">G-mail
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" class="" alt="G-mail"
+                                height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank"
+                        class="list-group-item list-group-item-danger list-group-item-action">Youtube
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://www.youtube.com/s/desktop/dd76c683/img/favicon_96x96.png" class=""
+                                alt="Youtube" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://drive.google.com/drive/u/0/my-drive" target="_blank"
+                        class="list-group-item list-group-item-secondary list-group-item-action">Google Drive
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png" class=""
+                                alt="Google Drive" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://photos.google.com/?tab=Cq&pageId=none&pli=1" target="_blank"
+                        class="list-group-item list-group-item-success list-group-item-action">Google Photo
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://ssl.gstatic.com/social/photosui/images/logo/1x/photos_512dp.png" class=""
+                                alt="Google Photo" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://www.google.com/maps/@27.6704274,85.3239595,15z" target="_blank"
+                        class="list-group-item list-group-item-dark list-group-item-action">Google Map
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://www.google.com/images/branding/product/ico/maps15_bnuw3a_32dp.ico"
+                                class="" alt="Google Map" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://contacts.google.com/?hl=en&tab=mC" target="_blank"
+                        class="list-group-item list-group-item-primary list-group-item-action">Google Contact
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://ssl.gstatic.com/images/branding/product/2x/contacts_512dp.png" class=""
+                                alt="Google Contact" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://translate.google.com.np/?hl=en&tab=oT" target="_blank"
+                        class="list-group-item list-group-item-secondary list-group-item-action">Google Translate
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://ssl.gstatic.com/translate/favicon.ico" class="" alt="Google Translate"
+                                height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://play.google.com/store/apps?gl=US" target="_blank"
+                        class="list-group-item list-group-item-success list-group-item-action">Google PlayStore
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://www.gstatic.com/android/market_images/web/favicon_v2.ico" class=""
+                                alt="Google PlayStore" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://dialogflow.cloud.google.com/#/agent/personal-assistant-cbub/intents"
+                        target="_blank" class="list-group-item list-group-item-danger  list-group-item-action">Google
+                        Dialogflow
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://static.dialogflow.com/common/favicon.png" class="" alt="Google Dialogflow"
+                                height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/category/extensions"
+                        target="_blank" class="list-group-item list-group-item-primary  list-group-item-action">Google
+                        Chrome store
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://ssl.gstatic.com/chrome/webstore/images/icon_144px.png" class="" alt="Google Chrome store"
+                                height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home"
+                        target="_blank" class="list-group-item list-group-item-primary  list-group-item-action">Microsoft-Edge-Extensions
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://th.bing.com/th/id/R.3d6a2ad56bc3403c5cfcc3efe09b741b?rik=gnNKMMZSvZ3uMA&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-microsoft-logo-iconlogobrand-logoiconslogos-251519939091wmudn.png&ehk=1%2fl4i5MeDLTCpvZhUZlCefvhSzsGR16HIPqagpDxYDg%3d&risl=&pid=ImgRaw&r=0" class="" alt="Microsoft-Edge-Extensions"
+                                height="10px" width="10px">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Web Development
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body list-group list-group-numbered">
+                    <a href="https://www.codewithharry.com/blogpost/html-cheatsheet" target="_blank"
+                        class="list-group-item list-group-item-primary list-group-item-action">HTML-cheatsheet
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://www.codewithharry.com/favicon.ico" class="" alt="HTML-cheatsheet" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://www.codewithharry.com/blogpost/css-cheatsheet" target="_blank"
+                        class="list-group-item list-group-item-secondary list-group-item-action">CSS-cheatsheet
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://www.codewithharry.com/favicon.ico" class="" alt="CSS-cheatsheet" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://www.codewithharry.com/blogpost/javascript-cheatsheet" target="_blank"
+                        class="list-group-item list-group-item-success list-group-item-action">Javascript-cheatsheet
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://www.codewithharry.com/favicon.ico" class="" alt="Javascript-cheatsheet" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://9elements.github.io/fancy-border-radius/full-control.html#27.33.42.26-53.54.71.51-."
+                        target="_blank"
+                        class="list-group-item list-group-item-danger list-group-item-action">fancy-border-radius
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://9elements.github.io/fancy-border-radius/apple-touch-icon.png" class="" alt="fancy-border-radius" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://www.canva.com/design/DAEkhn2NvKc/ps5MRJZMOxO-RoY_7ST6ww/edit" target="_blank"
+                        class="list-group-item list-group-item-warning list-group-item-action">Logo creator
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://static.canva.com/static/images/android-192x192-2.png" class="" alt="Logo creator" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://dummyimage.com/" target="_blank"
+                        class="list-group-item list-group-item-info list-group-item-action">Dummy image generator
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://dummyimage.com/favicon.ico" class="" alt="Dummy image generator" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://flatuicolors.com/" target="_blank"
+                        class="list-group-item list-group-item-dark list-group-item-action">Flat ui color generator
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://flatuicolors.com/static/favicon.ico" class="" alt="Flat ui color generator" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://digitalsynopsis.com/design/flat-color-palettes/" target="_blank"
+                        class="list-group-item list-group-item-success list-group-item-action">Flat color palette
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://digitalsynopsis.com/wp-content/uploads/2019/11/cropped-digital-synopsis-favicon-192x192.jpg" class="" alt="Flat color palette" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://colorsinspo.com/" target="_blank"
+                        class="list-group-item list-group-item-warning list-group-item-action">Color sinspo
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://colorsinspo.com/static/img/colorsinspo-favicon.png" class="" alt="Color sinspo" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://www.flatuicolorpicker.com/" target="_blank"
+                        class="list-group-item list-group-item-danger  list-group-item-action">Flat ui color picker
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://www.flatuicolorpicker.com/wp-content/uploads/2021/11/cropped-flatuicolorpicker-site-icon-1-192x192.png" class="" alt="Flat ui color picker" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://fffuel.co/cccolor/" target="_blank"
+                        class="list-group-item list-group-item-success  list-group-item-action">cccolor
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://fffuel.co/images/favicon/favicon.svg" class="" alt="cccolor" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://cssgradient.io/" target="_blank"
+                        class="list-group-item list-group-item-secondary  list-group-item-action">css gradient
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://cssgradient.io/images/favicon-23859487.png" class="" alt="css gradient" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://cssgenerator.org/box-shadow-css-generator.html" target="_blank"
+                        class="list-group-item list-group-item-primary  list-group-item-action">Box-shadow-css-generator
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://cssgenerator.org/favicon.png" class="" alt="Box-shadow-css-generator" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://cssanimate.com/" target="_blank"
+                        class="list-group-item list-group-item-secondary list-group-item-action">CSS key frame animation generator
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://angrytools.com/include/img/apple-touch-icon.png" class="" alt="CSS key frame animation generator" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://angrytools.com/css-generator/animation/" target="_blank"
+                        class="list-group-item list-group-item-success list-group-item-action">CSS animation generator
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://angrytools.com/include/img/apple-touch-icon.png" class="" alt="CSS animation generator" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://freebiesbug.com/psd-freebies/website-template/" target="_blank"
+                        class="list-group-item list-group-item-danger list-group-item-action">PSD website template
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://cdn.freebiesbug.com/wp-content/themes/freebiesbug/assets/images/apple-touch-icon-144x144-precomposed.png" class="" alt="PSD website template" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://codepen.io/pen/tour/welcome/start" target="_blank"
+                        class="list-group-item list-group-item-warning list-group-item-action">Code pen online code editor
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" class="" alt="Code pen online code editor"
+                                height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://www.bootstrapcdn.com/fontawesome/" target="_blank"
+                        class="list-group-item list-group-item-info list-group-item-action">Bootstrap all in one
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://www.bootstrapcdn.com/assets/img/favicons/apple-touch-icon.6126de5.png" class="" alt="Bootstrap all in one" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://michalsnik.github.io/aos/" target="_blank"
+                        class="list-group-item list-group-item-dark list-group-item-action">Animate on scroll
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://michalsnik.github.io/aos/img/github_octocat.png" class="" alt="Animate on scroll" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://cdnjs.com/" target="_blank"
+                        class="list-group-item list-group-item-success list-group-item-action">All in one CDN Library
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://png.pngtree.com/template/20190322/ourlarge/pngtree-coding--code-logo-design-inspiration-vector-illustration-image_87607.jpg" class="" alt="All in one CDN Library" height="10px" width="10px">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Photo & Editing
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body list-group list-group-numbered">
+                    <a href="https://www.freepik.com/home" target="_blank"
+                        class="list-group-item list-group-item-primary list-group-item-action">Freepik get free images
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://freepik.cdnpk.net/img/favicons/apple-icon-144x144.png?v=2018082101" class="" alt="Freepik get free images" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://www.pexels.com/" target="_blank"
+                        class="list-group-item list-group-item-secondary list-group-item-action">Pexels image collection
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://www.pexels.com/assets/icons/pexels-icon-644533b609157fd990b1a6675626d63077ae1fb81e819c83f81dc2242877d413.png" class="" alt="Pexels image collection" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://unsplash.com/" target="_blank"
+                        class="list-group-item list-group-item-success list-group-item-action">Unsplash image gallery
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://unsplash.com/favicon-32x32.png" class="" alt="Unsplash image gallery" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://www.freeonlinephotoshop.com/en/" target="_blank"
+                        class="list-group-item list-group-item-danger list-group-item-action">Online Photo editor Photoshop
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://www.photopea.com/promo/icon512.png" class="" alt="Online Photo editor Photoshop" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://www.photopea.com/" target="_blank"
+                        class="list-group-item list-group-item-danger list-group-item-action">Online Photoshop
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://www.photopea.com/promo/icon512.png" class="" alt="Online Photoshop" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://edit.photo/" target="_blank"
+                        class="list-group-item list-group-item-warning list-group-item-action">Edit photo online
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://edit.photo/apple-touch-icon.png" class="" alt="Edit photo online" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://onlinepngtools.com/create-transparent-png" target="_blank"
+                        class="list-group-item list-group-item-info list-group-item-action">Online PNG tool
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://onlinepngtools.com/images/logo-onlinepngtools.png" class="" alt="Online PNG tool" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://compressjpeg.com/" target="_blank"
+                        class="list-group-item list-group-item-dark list-group-item-action">Image compressor
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://compressjpeg.com/images/compressjpeg/favicon.png" class="" alt="Image compressor" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://www.reduceimages.com/" target="_blank"
+                        class="list-group-item list-group-item-success list-group-item-action">Image size & quality reducer
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://www.reduceimages.com/img/app-icons/new-icon.png" class="" alt="Image size & quality reducer" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://imagecompressor.com/" target="_blank"
+                        class="list-group-item list-group-item-warning list-group-item-action">Online Image Compressor
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://imagecompressor.com/images/imagecompressor/favicon.png" class="" alt="Online Image Compressor" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://compressnow.com/" target="_blank"
+                        class="list-group-item list-group-item-danger  list-group-item-action">Compress Image Now
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://compressnow.com/favicon.ico" class="" alt="Compress Image Now" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://videocandy.com/" target="_blank"
+                        class="list-group-item list-group-item-success  list-group-item-action">Video candy(online video editor)
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://static.videocandy.com/images/favicon4.ico" class="" alt="Video candy(online video editor)" height="10px" width="10px">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Chrome extension
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body list-group list-group-numbered">
+                    <a href="https://chrome.google.com/webstore/detail/gighmmpiobklfepjocnamgkkbiglidom" target="_blank"
+                    title="Block ads and pop-ups on YouTube, Facebook, Twitch, and your favorite websites." class="list-group-item list-group-item-primary list-group-item-action">AdBlock — best ad blocker
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/mgNKV-3VMXD556WVUiWSbcukQQN-il4Zlqq03efTjG2B5j9YP7Fxr3idTQ_G0JFD7E6o4TMwvTQTleDn_8UdFLf5VQ=w128-h128-e365-rj-sc0x00ffffff" class="" alt="AdBlock — best ad blocker" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/cmedhionkhpnakcndndgjdbohmhepckk" target="_blank" title="Removes ads from Youtube™."
+                        class="list-group-item list-group-item-secondary list-group-item-action">Adblock for Youtube™
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/bMu6IzWn8zG4yCpDcUrrTHA8bh5pVuAW706__3d2e6Lw_XwpqY3qxn_BfqUS3aaCTisvqFQIN1C9ac4Dm6s0Fz-vOg=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Adblock for Youtube™" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/efaidnbmnnnibpcajpcglclefindmkaj" target="_blank" title="Do more in Google Chrome with Adobe Acrobat PDF tools. View, fill, comment, sign, and try convert and compress tools."
+                        class="list-group-item list-group-item-success list-group-item-action">Adobe Acrobat: PDF edit, convert, sign tools
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/aqahGz3euXadmtmp8NZnuKPoUm4cmewNY0AI1a_cMsC28cfvB2Bx3NArY9Mi50o2zF45Uh74Rmmq-Bh6dJRsVAbm=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Adobe Acrobat: PDF edit, convert, sign tools" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/hompjdfbfmmmgflfjdlnkohcplmboaeo" target="_blank" title="Re-enable the possibility to use the context menu on sites that overrides it."
+                        class="list-group-item list-group-item-danger list-group-item-action">Allow Right-Click
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/CcaFE4PCkKxw-MPZRrVnunQJEojQQN0OSsM4tj6fdUFZZ4lcxXpZoX6gpmgSr75wvZNRWCuKnNK5DR4SjTg13y93yKc=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Allow Right-Click" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/lmjegmlicamnimmfhcmpkclmigmmcbeh" target="_blank" title="Open Drive files directly from your browser in compatible applications installed on your computer."
+                        class="list-group-item list-group-item-warning list-group-item-action">Application Launcher For Drive (by Google)
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/uk9riKQLbLic5nXlpF6YwF0EmsExMLzqjs_SgoZQbJ3V8c1tB9AHtz3SbfD2eToVupmPQuAk6E9ULeDpsfbxziJV=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Application Launcher For Drive (by Google)" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/mcgbeeipkmelnpldkobichboakdfaeon" target="_blank" title="Fastest Way to Copy Text from Videos &amp; Images"
+                        class="list-group-item list-group-item-info list-group-item-action">Blackbox - Select. Copy. Paste &amp; Search
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/q5uwqkllozidCFMBRQX2-wq8n6OjVM_ZKojN_pHWiwL8N84tx7AZwdBwO4GgFjs9K4qXGJUKBVd8RS9l8aDeowXb4A=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Blackbox - Select. Copy. Paste &amp; Search" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/ncgpjidaohcjajcpafgagmejnooepbml" target="_blank" title="An easy way to inspect the CSS of any element with only hover over, and copy its entire CSS with one click."
+                        class="list-group-item list-group-item-dark list-group-item-action">CSS Inspector
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/ehMiSRZTkpmxYjdjPLi9gcHJQnOZqnCJzydvxD4xojCjZz_YVH0_9SBGLSbPchlNMfysB9klmVUH_23cN27xihAAAWY=w128-h128-e365-rj-sc0x00ffffff" class="" alt="CSS Inspector" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/eimadpbcbfnmbkopoojfekhnkhdbieeh" target="_blank" title="Dark mode for every website. Take care of your eyes, use dark theme for night and daily browsing."
+                        class="list-group-item list-group-item-success list-group-item-action">Dark Reader
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/T66wTLk-gpBBGsMm0SDJJ3VaI8YM0Utr8NaGCSANmXOfb84K-9GmyXORLKoslfxtasKtQ4spDCdq_zlp_t3QQ6SI0A=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Dark Reader" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/hdjhnhajlgeijccgeepomnhpobohcloh" target="_blank" title="Easily view PDF and MS Office documents in your browser."
+                        class="list-group-item list-group-item-warning list-group-item-action">Docs Viewer
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/Oq6hPCo-qhSiBVh3KlsPbXRfz27beNk4JVs56iChh4VIaQeizu6wm7oJE22QyKv5PkRSN7BiPm3jCPKzD4YEEsu-y50=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Docs Viewer" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/ngpampappnmepgilojfohadhhmbhlaek" target="_blank" title="Download files with Internet Download Manager"
+                        class="list-group-item list-group-item-danger  list-group-item-action">IDM Integration Module
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/9lrq9YRbtkkV6UURyRG4tReN46gXtDe2OFpMjDlzK9u87eJMWQIkdssSi9RVd4iv4PIfADqSRMGzF0mdrsHsra1T=w128-h128-e365-rj-sc0x00ffffff" class="" alt="IDM Integration Module" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/immpkjjlgappgfkkfieppnmlhakdmaab" target="_blank" title="Enlarge thumbnails, and show images/videos from links with a mouse hover."
+                        class="list-group-item list-group-item-success  list-group-item-action">Imagus
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/x5f7Aujt2v3tZ6v9C29lLZ8Sau55N6VCSsa8LcB8TJHIwZ9pZW50EFu3pR-g8roHQ7qFimZtG8CeWJ8ulpmlW3-9zQ=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Imagus" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/ihcjicgdanjaechkgeegckofjjedodee" target="_blank" title="The fastest and safest web browsing experience."
+                        class="list-group-item list-group-item-secondary  list-group-item-action">Malwarebytes Browser Guard
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/UZPt17v_WaxXDY5u3x8NTx-hQmNVGmOaPSANAWNirF_moQIRGBbRBtKzjl07YWUDlRwGyYUtORJxH7zbgqStxU6utOQ=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Malwarebytes Browser Guard" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/fheoggkfdfchfphceeifdbepaooicaho" target="_blank" title="McAfee® WebAdvisor"
+                        class="list-group-item list-group-item-primary  list-group-item-action">McAfee® WebAdvisor
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/_uTVcUPoyNt-ctN11FxtJFt0R51YPm0cfTzeHRLN3d5nRmeeuHQS1O51E1VF713aZUnRwhbv5Uw4YnqR8vDWX3E_sA=w128-h128-e365-rj-sc0x00ffffff" class="" alt="McAfee® WebAdvisor" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/gjgfobnenmnljakmhboildkafdkicala" target="_blank" title="Add-on for enabling web automations"
+                        class="list-group-item list-group-item-secondary list-group-item-action">Microsoft Power Automate
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/9N5CXfLvaIrM2Z-3drTypbpYT5yZNfeLRLLWIjDVpOKF6I9c3Y5J6yh0RyOXor_8_cUVf4PBjL4N8IXw98nL-ZpFXxM=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Microsoft Power Automate" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/hkgfoiooedgoejojocmhlaklaeopbecg" target="_blank" title="Watch video using Picture-in-Picture"
+                        class="list-group-item list-group-item-success list-group-item-action">Picture-in-Picture Extension (by Google)
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/cvfpnTKw3B67DtM1ZpJG2PNAIjP6hVMOyYy403X4FMkOuStgG1y4cjCn21vmTnnsip1dTZSVsWBA9IxutGuA3dVDWhg=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Picture-in-Picture Extension (by Google)" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/aegnopegbbhjeeiganiajffnalhlkkjb" target="_blank" title="Search the web"
+                        class="list-group-item list-group-item-danger list-group-item-action">Safe Torrent Scanner
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/7uOC65j5PSmsZjjC_rd-LpCBjmQmlCNh6FfMyC35eKXcOQ700uuggDIm_BlA247LxSRVbgOsoQWdQZX00-GaiPpY-Q=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Safe Torrent Scanner" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/fdffijlhedcdiblbingmagmdnokokgbi" target="_blank" title="High quality text-to-speech reader capable of seamlessly reading large amounts of text."
+                        class="list-group-item list-group-item-warning list-group-item-action">Selection Reader (Text to Speech)
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/5cTkK5sqUNjPdrLrfdccUhwY2DiY5vh8dBX-15uzPO_hhDt6iFRQj93B3_23qJbjUY4ldGEvBWi0S2zfZQGLzJm3=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Selection Reader (Text to Speech)"
+                                height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/pgjjikdiikihdfpoppgaidccahalehjh" target="_blank" title="Take a Speedtest directly from your toolbar to quickly test your internet performance without interruption."
+                        class="list-group-item list-group-item-info list-group-item-action">Speedtest by Ookla
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/UeJDiqRqbe61ZwRA-nshMyadO7gt5igLJN5jGy3he_VVP5iELduwit3AdBk9gTnCiDzDIQtlUJv6mQ-V7_7azrShxQ=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Speedtest by Ookla" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/bihmplhobchoageeokmgbdihknkjbknd" target="_blank" title="Unblock any website and stay secure with Touch VPN. One-click connect to our fast VPN. Unlimited bandwidth and completely FREE!"
+                        class="list-group-item list-group-item-dark list-group-item-action">Touch VPN - Secure and unlimited VPN proxy
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/9BPdK9qaCNhUgFGa8ZU706Mkh3B6U8ddKrJyEVq_HXPzIbtV5eAdcKVXP_UmdKOqIFkmO-KNjReUnEflnzTlv5sT=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Touch VPN - Secure and unlimited VPN proxy" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/flhclpkhoiajoikkabbfbinnjapaflog" target="_blank" title="Browse websites from your favorite search engine result page"
+                        class="list-group-item list-group-item-success list-group-item-action">url render
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/Qa0wruhDBvg76z_gJZee9wEL2txuIrTabS_AOUyTFzirzbUUc5wjq85aAiy1LEGJtHQ60dXBDEscxthsGllySZPd=w128-h128-e365-rj-sc0x00ffffff" class="" alt="url render" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/nffaoalbilbmmfgbnbgppjihopabppdk" target="_blank" title="Speed up, slow down, advance and rewind HTML5 audio/video with shortcuts"
+                        class="list-group-item list-group-item-info list-group-item-action">Video Speed Controller
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/5yY1QQ__b0c2ZLmmi6mcdjX-9V3LAgXhgUaZtsICFTjeQV0S6xkVncmV99oEtU-H8WN8dZpWh_cycXSXoyffADsoYg=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Video Speed Controller" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/cmeckkgeamghjhkepejgjockldoblhcb" target="_blank" title="Export name and url of all installed extensions in Google Chrome"
+                        class="list-group-item list-group-item-warning list-group-item-action">Export links of all extensions
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/ErdC9Uu0tk9WfiWgFFAtqVK3vAxZlVsCnGUMnWtN7mhw05CfHsLloVJomEMhfPBE8N7ufy5KgmCZmGHY9GQh1Z9pDQ=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Export links of all extensions" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/jjmflmamggggndanpgfnpelongoepncg" target="_blank" title="Quickly enable/disable Google Chrome extensions"
+                        class="list-group-item list-group-item-danger list-group-item-action">Extensity
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/mgOg2hnGuthlYj-MEUXedWn_s9QjTXBwusffIAhbIuHM8L3K2c5cq1xf7bCzbRE5f9E6RXaGLPNEuJEt4hP6sLDL=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Extensity" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/aiahkbnnpafepcgnhhecilboebmmolnn" target="_blank" title="Download multiple links from a website easily."
+                        class="list-group-item list-group-item-success list-group-item-action">Batch Link Downloader
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/W3wtKXMl84X_VAaNsuIp0e4n-90uQmmYohVtqvv2kWHIhtpNZvN_OFBzVSW0fq51IZzRaysrfJt9oKuIiwrl6G1-p9g=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Batch Link Downloader" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/mpbjkejclgfgadiemmefgebjfooflfhl" target="_blank" title="Save time by asking Buster to solve captchas for you."
+                        class="list-group-item list-group-item-dark list-group-item-action">Buster: Captcha Solver for Humans
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/_NkMPYT69uN0ISvoipysSeGM9VdggyZ00f8Zx_ObjCgaVhUyvPz1lOm_G_f974V5CrYdt3agfNEKVP8n7vpjIKcjdQ=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Buster: Captcha Solver for Humans" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/mciiogijehkdemklbdcbfkefimifhecn" target="_blank" title="Download Manager | Video Downloader | Bulk Image Downloader"
+                        class="list-group-item list-group-item-secondary list-group-item-action">Chrono Download Manager
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/AqeNgTD1PZRWEMaOhwuyM288lswsM29dUIVeWgk8FIA8SvIMBZbHUtMqvLCz8z6mMQh6xAbr=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Chrono Download Manager" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/ohcpnigalekghcmgcdcenkpelffpdolg" target="_blank" title="A zoomed eyedropper &amp; color chooser tool that allows you to select color values from webpages and more."
+                        class="list-group-item list-group-item-primary list-group-item-action">ColorPick Eyedropper
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/AMn3fHR239GKDCbY0qffgLBZVq1NxYUZ66AhU9AJfgKVlpfzu8-L9C3njXq9TtlMDTRmHshBw0HPAkPQdEjd0Ci1hQ=w128-h128-e365-rj-sc0x00ffffff" class="" alt="ColorPick Eyedropper" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/adgnogkndmhcblbonkhgfbbngeghpboh" target="_blank" title="Easily edit or blur elements on any webpage"
+                        class="list-group-item list-group-item-dark list-group-item-action">Content Edit &amp; Blur
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/kbzWbXvOEmzy8XqMzR1U8UDh15lUdvr5-thf4F3uncp5xtqrYirCaMxUXVIrsMDv2bboXswfzmanKyG0HlHC_L_d=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Content Edit &amp; Blur" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/hlkenndednhfkekhgcdicdfddnkalmdm" target="_blank" title="Simple yet powerful Cookie Editor that allow you to quickly create, edit and delete cookies without leaving your tab."
+                        class="list-group-item list-group-item-success list-group-item-action">Cookie-Editor
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/yML5TEO1-N1ngawnIW4MxhsnB7HQr7DMS4RBH8SJGEg-R0P3RDAUoSSgtROcpcsy6l44h-G3urZYL9JEIj8S7ypQ=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Cookie-Editor" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/jlgkpaicikihijadgifklkbpdajbkhjo" target="_blank" title="Boost browsing productivity with mouse navigation shortcuts - simple Mouse Gestures, Super Drag, Wheel Gestures, Rocker Gestures."
+                        class="list-group-item list-group-item-danger list-group-item-action">CrxMouse Chrome™ Gestures
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/3Y-VC7CQbKPFnyCVZkQaLoL1ba2v3tQ2ozSNpwnQjS9_J0-Gk_-GCAqaLK3wWF0OAUxjQ6W79GXxAKihphu5otN6Xg=w128-h128-e365-rj-sc0x00ffffff" class="" alt="CrxMouse Chrome™ Gestures" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/mbnbehikldjhnfehhnaidhjhoofhpehk" target="_blank" title="Extract CSS and build beautiful styleguides."
+                        class="list-group-item list-group-item-warning list-group-item-action">CSS Peeper
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/0JNrZ9H--GDqNJFCtbsufPB6gSnwBKofKMTQbkdFA9_OHIQ_vDcNoaY-z0mhcPVEoAciwF9s7iBXmBuiIBcyy3cAHCc=w128-h128-e365-rj-sc0x00ffffff" class="" alt="CSS Peeper" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/anlikcnbgdeidpacdbdljnabclhahhmd" target="_blank" title="Display repo size, size of each file, download link and option to copy file contents"
+                        class="list-group-item list-group-item-info list-group-item-action">Enhanced GitHub
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/aUxmi47qA97SK3mZhukR7sWWpL0UCtB_Z7RnCbLZ9C_4kRfpZACK4Mn7XKrus4E2t-Cmtgm09Ka_1Kh1C4HlLLgqdg=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Enhanced GitHub" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/bnjjngeaknajbdcgpfkgnonkmififhfo" target="_blank" title="A form filler that fills all inputs on a page with fake/dummy data."
+                        class="list-group-item list-group-item-primary list-group-item-action">Fake Filler
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/FZ2jI6qDtyrJ-VuB6b36-KiEnN7TMEzGP17AL-BuRwb_AZBRfk0UiIGE3SfK6FDLrlDP2xOic2MmaYpGt7EJ-P_YqI8=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Fake Filler" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/fdpohaocaechififmbbbbbknoalclacl" target="_blank" title="Capture a screenshot of your current page in entirety and reliably—without requesting any extra permissions!"
+                        class="list-group-item list-group-item-warning list-group-item-action">GoFullPage - Full Page Screen Capture
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/xkq24Y-hSgJHCOs7hskeMNfZatMQYRmybkMY8gGrzHTYVJiQR_2un6xgg9cXY93ShVNU5LdC7n5fddtbQxeNIV0hma8=w128-h128-e365-rj-sc0x00ffffff" class="" alt="GoFullPage - Full Page Screen Capture" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/kbfnbcaeplbcioakkpcpgfkobkghlhen" target="_blank" title="Write your best with Grammarly for Microsoft Edge.""
+                        class="list-group-item list-group-item-danger list-group-item-action">Grammarly: Grammar Checker and Writing App
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/fgIyyEUt5FrH1Vd8K0psbk4fni3WVxgpXazIw_SiHvQYfG7_TqI4XcyZVnVtHudFAu71dTWBlMJ1dTJCj6JOAU1n2g=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Grammarly: Grammar Checker and Writing App" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/oihdhfbfoagfkpcncinlbhfdgpegcigf" target="_blank" title="Inserts option in the browser&#39;s image context menu to view image width, height and file size."
+                        class="list-group-item list-group-item-success list-group-item-action">Image Size Info
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/aVr0EyILtxOnaic1BvRXj889QqFAfznCSrG2I86jdKTwxy6aEG8YBQ0B5N7jtHpMIAUiCpsz4RiTll4m4uyWOqew=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Image Size Info" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/ifhikkcafabcgolfjegfcgloomalapol" target="_blank" title="Live preview of CSS/Less/Sass code changes. Auto-save file, autocomplete, Less/Sass to CSS, beautify, CSS reloader, lint, ..."
+                        class="list-group-item list-group-item-warning list-group-item-action">Live editor for CSS, Less &amp; Sass - Magic CSS
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/1Viz-imKTZ14w_skALqqYYFoB7cqBih-zB8Tfx6PX2DMsAZyeQsyoaGv4XhKloNGl7jl6p9Bdj3LDOYQghmfO5Z6Ug=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Live editor for CSS, Less &amp; Sass - Magic CSS" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/fahollcgofmpnehocdgofnhkkchiekoo" target="_blank" title="Extract all links on a webpage and export them to a file ..."
+                        class="list-group-item list-group-item-primary list-group-item-action">Link Klipper - Extract all links
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/W8eHz4z9HHBfQ62IViiaMK2e4IyCj_lmitH3_kGBfoRL0b5C_YrtNhfVQRFBy9dqzbT-ccK2YP1eoZElJPNUcqIJ=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Link Klipper - Extract all links" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/oifijhaokejakekmnjmphonojcfkpbbh" target="_blank" title="Opens a list of URLs ..."
+                        class="list-group-item list-group-item-dark list-group-item-action">Open Multiple URLs
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/5yFMwFvd55nYwAWuNm4NxjecQWFK19mm6Ye6KcOpbTQtIJRMr2aP6ml92nKZll1NNuXT3xobgGnwIIJFZTWQc_as9A=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Open Multiple URLs" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/bhbhjjkcoghibhibegcmbomkbakkpdbo" target="_blank" title="A powerful optical character recognition (OCR) extension to capture and convert images to text"
+                        class="list-group-item list-group-item-secondary list-group-item-action">OCR - Image Reader
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/ALXHTryHQqNoO_pRCjYOr7Qlov-yUq2_UXez85sPO8_C4jr-xFout8L97Hl01uxV6dDNKNaGXTwOdG7xhMIcFJxL=w128-h128-e365-rj-sc0x00ffffff" class="" alt="OCR - Image Reader" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/ndjpnladcallmjemlbaebfadecfhkepb" target="_blank" title="View, edit, and create Office documents in your browser."
+                        class="list-group-item list-group-item-primary list-group-item-action">Office
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/dDOShCN1KI44DNgyw-Hod5ggpNCPNF7v9TCVMRXLWbrtb5naKTmPFKSawz1rjTIiUfaozA3fg3CNWLHsLSjJ-Rc1ig=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Office" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/ajmakemidedfmmlhamallpgmphpbnkdh" target="_blank" title="If you are looking for the best advanced free photo editor, then try Photopea Online Photo Editor. it works in your Chrome browser."
+                        class="list-group-item list-group-item-dark list-group-item-action">Photopea - Online Photo Editor
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/t49TnmvTrGMj0XbjkK1IkAosL8SBfVP2BxmE6E4uRzYCGvGQqcxgtWR7_EiP-UuwTHS77O2GXlpsPRr-ezyTp4nY=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Photopea - Online Photo Editor" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/abpdnfjocnmdomablahdcfnoggeeiedb" target="_blank" title="UP - Save all resources files with retaining folder structure."
+                        class="list-group-item list-group-item-success list-group-item-action">Save All Resources
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/CfRJsjpE9Qv6GZn27qgnW5d5w-lkeHE_TfSTcbUzoECLDnPwwr9DO7pTkAHxQt9OxnLdP2EhZM5pSrU7A7ghi3epBg=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Save All Resources" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/cjmjgijhapgicbhmniemjkjeaedanank" target="_blank" title="This extension will allow users to set password for the browser to avoid unauthorized access. Prompts for password on chrome startup"
+                        class="list-group-item list-group-item-danger list-group-item-action">Set password for your browser ( chrome lock )
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/CJAYnHdUzIrj-VDOlQudEH_sx1AfQT7e3A75G0fzvHdLHx66tj7z_aaQwiPa5eWtar00pDetRHwuSuZpY3MTY0Up=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Set password for your browser ( chrome lock )" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/aefehdhdciieocakfobpaaolhipkcpgc" target="_blank" title="Allow Copy on every websites"
+                        class="list-group-item list-group-item-warning list-group-item-action">Simple Allow Copy
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/xuPlMpq5f9IaJqYxjddHrFXRFbKKtc-M-5-cZEUqenIwZivi-fTY9GT3ztzTh_v6AHV7A_ugd2U4KjJ8L5UIeQJ0=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Simple Allow Copy" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc" target="_blank" title="Split Screen made easy. Resize the CURRENT tab and tabs to the RIGHT into layouts on separate windows. w/ Multi Monitor Support."
+                        class="list-group-item list-group-item-info list-group-item-action">Tab Resize - split screen layout
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/fTrFLxWWEtfs0iLD-u6HiOAI-2PP4IGKY8LK_y7kDBDobqE1WYa70QJjxjTsx8dCwdM6KHYsTNOLaqgocXFF_gOTOw=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Tab Resize - split screen layout" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/jldhpllghnbhlbpcmnajkpdmadaolakh" target="_blank" title="Organize work and life with Todoist"
+                        class="list-group-item list-group-item-primary list-group-item-action">Todoist 
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/zqKRvf52hI5Yk6N5C8k6NJnDT7bsEW6whE3wf1UqfpES79AtnrO2ykLgqwciE-bca6QghdXNFJDYe_9xO6iYsvK7=w128-h128-e365-rj-sc0x00ffffff" class="" alt="Todoist " height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/nbhcbdghjpllgmfilhnhkllmkecfmpld" target="_blank" title="User JavaScript and CSS on any website"
+                        class="list-group-item list-group-item-warning list-group-item-action">User JavaScript and CSS
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/1TSw8ZPwr2VvUZlY1cbAPOWo5cisrfpazmTpfGH4YWGTLCJLUq23LMSKuS5ee-bBP5C0GL8wsbpV9iQ9zLEQ6Dv8Vw=w128-h128-e365-rj-sc0x00ffffff" class="" alt="User JavaScript and CSS" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://chrome.google.com/webstore/detail/jabopobgcpjmedljpbcaablpmlmfcogm" target="_blank" title="The easiest way to identify fonts on web pages."
+                        class="list-group-item list-group-item-danger list-group-item-action">WhatFont
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://lh3.googleusercontent.com/dPdyfSl7seUOpHe4rDj-oxo7oQ9P60809H2MY4NynmV9CDsY9p-p8Ovb_QmsYdGM7jgjCYG6s7MGYnMOMOjtpbdGLJ4=w128-h128-e365-rj-sc0x00ffffff" class="" alt="WhatFont" height="10px" width="10px">
+                        </span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    VS Code extension
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body list-group list-group-numbered">
+                    <a href="https://www.codewithharry.com/blogpost/html-cheatsheet" target="_blank"
+                        class="list-group-item list-group-item-primary list-group-item-action">HTML-cheatsheet
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://www.codewithharry.com/favicon.ico" class="" alt="HTML-cheatsheet" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://www.codewithharry.com/blogpost/css-cheatsheet" target="_blank"
+                        class="list-group-item list-group-item-secondary list-group-item-action">CSS-cheatsheet
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://www.codewithharry.com/favicon.ico" class="" alt="CSS-cheatsheet" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://www.codewithharry.com/blogpost/javascript-cheatsheet" target="_blank"
+                        class="list-group-item list-group-item-success list-group-item-action">Javascript-cheatsheet
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://www.codewithharry.com/favicon.ico" class="" alt="Javascript-cheatsheet" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://9elements.github.io/fancy-border-radius/full-control.html#27.33.42.26-53.54.71.51-."
+                        target="_blank"
+                        class="list-group-item list-group-item-danger list-group-item-action">fancy-border-radius
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://9elements.github.io/fancy-border-radius/apple-touch-icon.png" class="" alt="fancy-border-radius" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://www.canva.com/design/DAEkhn2NvKc/ps5MRJZMOxO-RoY_7ST6ww/edit" target="_blank"
+                        class="list-group-item list-group-item-warning list-group-item-action">Logo creator
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://static.canva.com/static/images/android-192x192-2.png" class="" alt="Logo creator" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://dummyimage.com/" target="_blank"
+                        class="list-group-item list-group-item-info list-group-item-action">Dummy image generator
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://dummyimage.com/favicon.ico" class="" alt="Dummy image generator" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://flatuicolors.com/" target="_blank"
+                        class="list-group-item list-group-item-dark list-group-item-action">Flat ui color generator
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://flatuicolors.com/static/favicon.ico" class="" alt="Flat ui color generator" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://digitalsynopsis.com/design/flat-color-palettes/" target="_blank"
+                        class="list-group-item list-group-item-success list-group-item-action">Flat color palette
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://digitalsynopsis.com/wp-content/uploads/2019/11/cropped-digital-synopsis-favicon-192x192.jpg" class="" alt="Flat color palette" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://colorsinspo.com/" target="_blank"
+                        class="list-group-item list-group-item-warning list-group-item-action">Color sinspo
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://colorsinspo.com/static/img/colorsinspo-favicon.png" class="" alt="Color sinspo" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://www.flatuicolorpicker.com/" target="_blank"
+                        class="list-group-item list-group-item-danger  list-group-item-action">Flat ui color picker
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://www.flatuicolorpicker.com/wp-content/uploads/2021/11/cropped-flatuicolorpicker-site-icon-1-192x192.png" class="" alt="Flat ui color picker" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://fffuel.co/cccolor/" target="_blank"
+                        class="list-group-item list-group-item-success  list-group-item-action">cccolor
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://fffuel.co/images/favicon/favicon.svg" class="" alt="cccolor" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://cssgradient.io/" target="_blank"
+                        class="list-group-item list-group-item-secondary  list-group-item-action">css gradient
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://cssgradient.io/images/favicon-23859487.png" class="" alt="css gradient" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://cssgenerator.org/box-shadow-css-generator.html" target="_blank"
+                        class="list-group-item list-group-item-primary  list-group-item-action">Box-shadow-css-generator
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://cssgenerator.org/favicon.png" class="" alt="Box-shadow-css-generator" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://cssanimate.com/" target="_blank"
+                        class="list-group-item list-group-item-secondary list-group-item-action">CSS key frame animation generator
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://angrytools.com/include/img/apple-touch-icon.png" class="" alt="CSS key frame animation generator" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://angrytools.com/css-generator/animation/" target="_blank"
+                        class="list-group-item list-group-item-success list-group-item-action">CSS animation generator
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://angrytools.com/include/img/apple-touch-icon.png" class="" alt="CSS animation generator" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://freebiesbug.com/psd-freebies/website-template/" target="_blank"
+                        class="list-group-item list-group-item-danger list-group-item-action">PSD website template
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://cdn.freebiesbug.com/wp-content/themes/freebiesbug/assets/images/apple-touch-icon-144x144-precomposed.png" class="" alt="PSD website template" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://codepen.io/pen/tour/welcome/start" target="_blank"
+                        class="list-group-item list-group-item-warning list-group-item-action">Code pen online code editor
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" class="" alt="Code pen online code editor"
+                                height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://www.bootstrapcdn.com/fontawesome/" target="_blank"
+                        class="list-group-item list-group-item-info list-group-item-action">Bootstrap all in one
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://www.bootstrapcdn.com/assets/img/favicons/apple-touch-icon.6126de5.png" class="" alt="Bootstrap all in one" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://michalsnik.github.io/aos/" target="_blank"
+                        class="list-group-item list-group-item-dark list-group-item-action">Animate on scroll
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://michalsnik.github.io/aos/img/github_octocat.png" class="" alt="Animate on scroll" height="10px" width="10px">
+                        </span>
+                    </a>
+                    <a href="https://cdnjs.com/" target="_blank"
+                        class="list-group-item list-group-item-success list-group-item-action">All in one CDN Library
+                        <span class="badge bg-primary bg-opacity-25 rounded-pill">
+                            <img src="https://png.pngtree.com/template/20190322/ourlarge/pngtree-coding--code-logo-design-inspiration-vector-illustration-image_87607.jpg" class="" alt="All in one CDN Library" height="10px" width="10px">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
