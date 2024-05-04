@@ -54,7 +54,7 @@ If you have any feedback, please reach out to us at <a href="https://bibek10550.
 
 ## Logo
 <!-- ![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png) -->
-![Logo](https://github.com/fluidicon.png)
+![Logo](https://bibek10550.github.io/bibeksah48/favicon_io/apple-touch-icon.png)
 
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=bibek10550&" alt="bibek10550" /></p>
